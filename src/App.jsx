@@ -4,7 +4,7 @@ import { useState } from "react";
 import GamePlay from "./components/GamePlay";
 function App() {
 
-  const [isGameStarted , SetIsGameStarted ] = useState(true)
+  const [isGameStarted , SetIsGameStarted ] = useState(false)
 
   const toggleGamePlay = () => {
     SetIsGameStarted((prev) => !prev);
