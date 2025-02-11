@@ -11,13 +11,15 @@ const NumberSelector = () => {
     return(
     <NumberSelectorContainer>
         <div className = "flex">
-        {arrNumbr.map((value , i) => (
+        {
+        arrNumbr.map((value , i) => (
         <Box 
         isSelected = {value == selsctedNumber}
         Key = {i} onClick={() => setSelectedNumber(value)}>
         {value}
         </Box>
-        ))}
+        ))
+        }
         </div>
         <p>Select Number</p>
     </NumberSelectorContainer>

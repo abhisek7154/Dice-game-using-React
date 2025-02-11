@@ -7,13 +7,14 @@ function App() {
   const [isGameStarted , SetIsGameStarted ] = useState(false)
 
   const toggleGamePlay = () => {
-    SetIsGameStarted((prev) => !prev);
+    SetIsGameStarted((prev) => !prev); // Previous value will be altered
+                                       //in state if it is "False" => it will show true 
   }
 
   return (
     <>
     {
-      isGameStarted ? <GamePlay />:<StartGame
+      isGameStarted ? <GamePlay />:<StartGame // if -else
       toggle = {toggleGamePlay}/>
     }
     </>
